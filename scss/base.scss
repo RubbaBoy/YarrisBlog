@@ -1,0 +1,141 @@
+@import '../bootstrap/bootstrap';
+@import 'variables';
+@import 'index';
+@import 'post';
+
+@font-face {
+  font-family: "Source Code Pro";
+  src: url(../fonts/SourceCodePro-Regular.ttf);
+}
+
+body {
+  padding-top: 50px;
+}
+
+nav {
+  .container {
+    .title {
+      font-size: 36px;
+      font-weight: 400;
+    }
+
+    .nav-break {
+      background-color: $grain-yellow;
+      height: 2px;
+    }
+
+    .link-container {
+      .top-link {
+        color: $muted-link;
+        font-size: 24px;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  padding: 30px;
+  text-align: center;
+
+  .icon-link {
+    display: inline-block;
+    transition: transform 200ms;
+
+    &:hover {
+      text-decoration: none;
+      color: red;
+      transform: translateY(-3px);
+    }
+
+    .i-icon {
+      margin: 0 10px;
+    }
+  }
+}
+
+.accent-link {
+  color: #000;
+  font-size: 18px;
+  &::before {
+    position: absolute;
+    content: '';
+    width: 30px;
+    margin-top: 28px;
+    border-bottom-color: $grain-yellow;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    transition: width linear 200ms;
+  }
+
+  &:hover {
+    color: #000;
+    text-decoration: none;
+
+    &::before {
+      width: 60px;
+    }
+  }
+}
+
+.tags {
+  .tag {
+    &::before {
+      content: '#';
+      color: $muted-link;
+      padding-right: 5px;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &:not(:first-child) {
+      margin-left: 10px;
+    }
+
+    color: $muted-link;
+    text-transform: uppercase;
+  }
+}
+
+i.i-icon, i.icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &.github {
+    background-image: url(../icons/github.svg);
+  }
+
+  &.mail {
+    background-image: url(../icons/mail.svg);
+  }
+
+  &.file-text {
+    background-image: url(../icons/file-text.svg);
+  }
+
+  &.globe {
+    background-image: url(../icons/globe.svg);
+  }
+}
+
+i.i-icon {
+  display: inline-block;
+}
+
+// Overrided Components
+
+code {
+  background-color: #E2E2E2;
+  color: #000;
+  font-family: "Source Code Pro", monospace;
+  padding: 20px;
+  margin: 20px 0;
+  display: block;
+}

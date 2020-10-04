@@ -1,0 +1,48 @@
+.preview-container {
+  margin-top: 100px;
+}
+
+.corner, .post-preview::after, .post-preview::before {
+  border-color: #F5CB5C;
+  border-width: 3px;
+  width: 33px;
+  height: 33px;
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.post-preview {
+  margin-bottom: 50px;
+}
+.post-preview::before {
+  border-style: solid none none solid;
+}
+.post-preview::after {
+  border-style: none solid solid none;
+  right: 0;
+  bottom: 0;
+}
+.post-preview .content {
+  display: block;
+  margin: 30px 75px;
+}
+.post-preview .content .post-title {
+  font-size: 27px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.post-preview .content .post-date {
+  font-size: 18px;
+  color: #333533;
+}
+.post-preview .content .post-content {
+  margin: 40px 0;
+  line-height: 25px;
+  font-size: 18px;
+}
+.post-preview .content .link-container {
+  text-align: right;
+}
+
+/*# sourceMappingURL=index.css.map */
