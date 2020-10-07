@@ -8656,6 +8656,10 @@ h3 {
 .post-preview .content .link-container {
   text-align: right;
 }
+.post-content img {
+  max-width: 100%;
+}
+
 @font-face {
   font-family: "Source Code Pro";
   src: url(../fonts/SourceCodePro-Regular.ttf);
@@ -8766,6 +8770,10 @@ code {
   padding: 20px;
   margin: 20px 0;
   display: block;
+}
+
+.post-content img {
+  max-width: 100%;
 }
 
 .preview-container {

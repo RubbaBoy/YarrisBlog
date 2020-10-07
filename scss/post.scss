@@ -1,3 +1,7 @@
 @import 'variables';
 
-// Stuff for post-specific stuff
+.post-content {
+  img {
+    max-width: 100%;
+  }
+}
