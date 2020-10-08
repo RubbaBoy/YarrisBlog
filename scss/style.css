@@ -8767,7 +8767,7 @@ code {
   background-color: #E2E2E2;
   color: #000;
   font-family: "Source Code Pro", monospace;
-  padding: 20px;
+  padding: 20px !important;
   margin: 20px 0;
   display: block;
 }
