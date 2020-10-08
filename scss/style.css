@@ -8656,7 +8656,7 @@ h3 {
 .post-preview .content .link-container {
   text-align: right;
 }
-.post-content img {
+.content img {
   max-width: 100%;
 }
 
@@ -8772,7 +8772,7 @@ code {
   display: block;
 }
 
-.post-content img {
+.content img {
   max-width: 100%;
 }
 
