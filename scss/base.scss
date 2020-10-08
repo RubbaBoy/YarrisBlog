@@ -8,15 +8,28 @@
   src: url(../fonts/SourceCodePro-Regular.ttf);
 }
 
+html {
+  height: 100%;
+}
+
 body {
   padding-top: 50px;
+  height: 100%;
+  margin: 0;
 }
 
 nav {
+  height: 100px;
+
   .container {
     .title {
       font-size: 36px;
       font-weight: 400;
+
+      a {
+        color: initial;
+        text-decoration: none;
+      }
     }
 
     .nav-break {
@@ -36,7 +49,12 @@ nav {
   }
 }
 
+.container {
+  min-height: calc(100% - 200px);
+}
+
 footer {
+  margin-top: -90px;
   padding: 30px;
   text-align: center;
 
